@@ -52,5 +52,15 @@ Elm doesn't know `foo`, he doesn't have to, but he does know that you want _cons
 
 - function defintions order doesn't matter
 
+## Observation
+Awesome tools exists to debug JS application. But because of the flexible nature of JS and the countless ways developers write code, it's hard for these tools to anticipate runtime errors.
+When you know what the Elm compiler is capable of, you come to think that all these cool tools won't ever be able to catch every exception. Flow for instance, throws __possible__ runtime errors.
+
+It's easy to say to a type checker "let me handle this, i know what this function returns" and put `any` has returned value's type. But if you do this once, you may end up doing this a lot later, gradually losing what this tool offers and confronted back to the real nature of JS.
+
+As André Staltz said in a blog post, when you use Elm, you use the Elm language and the Elm architecture. You don't have to decide how your data travels inside your app, neither how to manage its state: Elm is here to back you up because he _knows_. You just have to focus on delivering your feature, the good path.
+
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
+- https://www.youtube.com/watch?v=txxKx_I39a8
+- http://staltz.com/some-problems-with-react-redux.html
