@@ -46,7 +46,9 @@ myMethod firstname lastname = 5
 Elm doesn't know `foo`, he doesn't have to, but he does know that you want _consistency_ between these arguments.
 `foo` cannot be used as returned type value has Elm always know the true type of the end value
 
+- when publishing packages on elm packages plateform, semantic versionning is enforced. Plus, Elm compiler will tell if your changes are breaking changes.
 
+- for side effects, you describe Tasks. Every functions doing  side effect have to return Task type. This helps compiler to find which function could possibly initiate the error.
 
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
