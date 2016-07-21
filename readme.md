@@ -46,6 +46,7 @@ myMethod : foo -> foo -> Int
 myMethod firstname lastname = 5
 ```
 Elm doesn't know `foo`, he doesn't have to, but he does know that you want _consistency_ between these arguments.
+`foo` cannot be used as returned type value has Elm always know the true type of the end value
 
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
