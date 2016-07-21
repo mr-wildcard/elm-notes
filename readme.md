@@ -50,5 +50,7 @@ Elm doesn't know `foo`, he doesn't have to, but he does know that you want _cons
 
 - for side effects, you describe Tasks. Every functions doing  side effect have to return Task type. This helps compiler to find which function could possibly initiate the error.
 
+- function defintions order doesn't matter
+
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
