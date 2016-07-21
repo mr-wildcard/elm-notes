@@ -17,3 +17,18 @@ reducer action model =
 ```
 
 - Elm do not use function callback. It sends instead, the new data the user wants.
+
+This is awesome.
+```Elm
+-- For Elm, this, is empty list. It doesn't know anything about what it contains :
+[]
+
+-- prints: [] : List a
+-- "a" meaning “whatever" for Elm.
+-- If it happens that we need to filter an empty List in our 
+-- application like this :
+List.filter (\str -> str /= "a") []
+-- Elm will know that it's a list of Strings because we are
+-- filtering list elements against a String.
+-- This also happens with any used Primitive.
+```
