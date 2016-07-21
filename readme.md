@@ -18,20 +18,18 @@ reducer action model =
 
 - Elm do not use function callback. It sends instead, the new data the user wants.
 
-This is awesome.
+This is awesome. For Elm, `[]` is an empty List. He doesn't know anything about what it contains.
 ```Elm
--- For Elm, this, is empty list. It doesn't know anything about what it contains :
-[]
-
+elm > []
 -- prints: [] : List a
--- "a" meaning “whatever" for Elm.
--- If it happens that we need to filter an empty List in our
--- application like this :
-List.filter (\str -> str /= "a") []
--- Elm will know that it's a list of Strings because we are
--- filtering list elements against a String.
--- This also happens with any used Primitive.
 ```
+"a" meaning “whatever" for Elm.
+If it happens that we need to filter an empty List in our application like this :
+```Elm
+List.filter (\str -> str /= "a") []
+```
+Elm will know that it's a list of Strings because we are filtering list elements against a String. This also happens with any used Primitive.
+
 
 You can add indications above functions to specify each arguments types + type of returned value:
 ```Elm
@@ -47,6 +45,8 @@ myMethod firstname lastname = 5
 ```
 Elm doesn't know `foo`, he doesn't have to, but he does know that you want _consistency_ between these arguments.
 `foo` cannot be used as returned type value has Elm always know the true type of the end value
+
+
 
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
