@@ -60,6 +60,8 @@ It's easy to say to a type checker "let me handle this, i know what this functio
 
 As André Staltz said in a blog post, when you use Elm, you use the Elm language and the Elm architecture. You don't have to decide how your data travels inside your app, neither how to manage its state: Elm is here to back you up because he _knows_. You just have to focus on delivering your feature, the good path.
 
+This is awesome that by design Elm doesn't allow you to add side effect to your functions.
+
 ## Resources
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
 - https://www.youtube.com/watch?v=txxKx_I39a8
