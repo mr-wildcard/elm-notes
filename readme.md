@@ -54,6 +54,8 @@ Elm doesn't know `foo`, he doesn't have to, but he does know that you want _cons
 
 - when a function's returned type ends with `Msg` this means that the value can emit messages.
 
+- `update` function sent to `Html.App.program` is called everytime a message is received
+
 ## Observation
 Awesome tools exists to debug JS application. But because of the flexible nature of JS and the countless ways developers write code, it's hard for these tools to anticipate runtime errors.
 When you know what the Elm compiler is capable of, you come to think that all these cool tools won't ever be able to catch every exception. Flow for instance, throws __possible__ runtime errors.
@@ -65,6 +67,7 @@ As André Staltz said in a blog post, when you use Elm, you use the Elm language
 This is awesome that by design Elm doesn't allow you to add side effect to your functions.
 
 ## Resources
+- http://www.elm-tutorial.org/en/
 - https://www.youtube.com/watch?v=zBHB9i8e3Kc
 - https://www.youtube.com/watch?v=txxKx_I39a8
 - http://staltz.com/some-problems-with-react-redux.html
