@@ -52,6 +52,8 @@ Elm doesn't know `foo`, he doesn't have to, but he does know that you want _cons
 
 - function defintions order doesn't matter
 
+- when a function's returned type ends with `Msg` this means that the value can emit messages.
+
 ## Observation
 Awesome tools exists to debug JS application. But because of the flexible nature of JS and the countless ways developers write code, it's hard for these tools to anticipate runtime errors.
 When you know what the Elm compiler is capable of, you come to think that all these cool tools won't ever be able to catch every exception. Flow for instance, throws __possible__ runtime errors.
