@@ -2,7 +2,7 @@
 
 - only ==
 - check all conditions and find errors like typos even in an unmet condition
-- disallow/warn about mixed type comparison like 1 == « 1 » , this won’t never happen in Elm so he tells you with a MISMATCH TYPE error
+- disallow/warn about mixed type comparison like 1 == "1" , this won’t never happen in Elm so he tells you with a MISMATCH TYPE error
 - Elm uses Virtual DOM natively
 - If a dispatched action is not handled inside the model update function, Elm throws an error
 - a lot of runtime errors disappears with Elm compiler
